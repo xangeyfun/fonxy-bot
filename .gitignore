@@ -1,0 +1,9 @@
+__pycache__
+.env
+database.db
+.venv
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+command_logs.txt
