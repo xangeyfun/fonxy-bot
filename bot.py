@@ -12,8 +12,8 @@ load_dotenv()
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="", help_command=None, intents=intents, status=discord.Status.online, activity=discord.Activity(type=discord.ActivityType.watching, name="over everyone 👀"))
 TOKEN = os.getenv("TOKEN") or ""
-meow = re.compile(r"^\**((m+[erao]+[wp]+|n+y+a+|p+u*r+)\**\s*)+~*\s*[.!?]*\s*(:3+)?\**$", re.IGNORECASE)
-woof = re.compile(r"^\**((w+[oa]+f+|b+a+r+k+|a+r+f+|w*r+u+f+|a+w+o+)\**\s*)+~*\s*[.!?]*\s*(:3+)?\**$", re.IGNORECASE)
+meow = re.compile(r"^\**((m+[erao]+[wp]+|n+y+a+|p+u*r+)s*\**\s*)+~*\s*[.!?]*\s*(:3+)?\**$", re.IGNORECASE)
+woof = re.compile(r"^\**((w+[oa]+f+|b+a+r+k+|a+r+f+|w*r+u+f+|a+w+o+)s*\**\s*)+~*\s*[.!?]*\s*(:3+)?\**$", re.IGNORECASE)
 
 with open("reactions.json", "r") as f:
     reactions = json.load(f)
